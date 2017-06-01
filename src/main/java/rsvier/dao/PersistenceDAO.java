@@ -1,12 +1,12 @@
 package rsvier.dao;
 
-public interface PersistenceDAO<E> {
+public interface PersistenceDAO<K,E> {
 	
 	public E save(E e);
 	
 	public boolean remove(E e);
 	
-	public E findById(long id);
+	public E findById(K id);
 	
 	public E merge(E e );
 

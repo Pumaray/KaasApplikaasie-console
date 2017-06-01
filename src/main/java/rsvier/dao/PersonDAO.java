@@ -4,7 +4,7 @@ import java.util.List;
 
 import rsvier.model.Person;
 
-public interface PersonDAO extends PersistenceDAO<Person> {
+public interface PersonDAO extends PersistenceDAO<Long, Person> {
 
 	public Person findByName(String name);
 

@@ -5,6 +5,8 @@ import java.util.concurrent.ConcurrentMap;
 import org.mapdb.DB;
 import org.mapdb.Serializer;
 
+import rsvier.dao.PersistenceDAO;
+
 public abstract class AbstractMapDBPersistence<K,E> {
 
 	protected DB db;

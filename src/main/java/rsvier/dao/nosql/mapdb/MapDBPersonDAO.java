@@ -27,7 +27,7 @@ public class MapDBPersonDAO extends AbstractMapDBPersistence<Long, Person> imple
 				.address(person.getAddress())
 				.birthdate(person.getBirthdate())
 				.creationDate(person.getCreationDate())
-				//.creator(person.getCreator())
+				// .creator(person.getCreator())
 				.gender(person.getGender())
 				.lastname(person.getLastname())
 				.surname(person.getSurname())
@@ -48,7 +48,7 @@ public class MapDBPersonDAO extends AbstractMapDBPersistence<Long, Person> imple
 	}
 
 	@Override
-	public Person findById(long id) {
+	public Person findById(Long id) {
 		return storage.get(id);
 	}
 
@@ -69,5 +69,4 @@ public class MapDBPersonDAO extends AbstractMapDBPersistence<Long, Person> imple
 	public List<Person> findAll() {
 		return new ArrayList<Person>(storage.values());
 	}
-
 }
